@@ -1,9 +1,8 @@
-<style global src="./main.scss"></style>
 <script>
-	export let name;
+  import { Router } from "@sveltech/routify";
+  import { routes } from "@sveltech/routify/tmp/routes";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+<style global src="./main.scss"></style>
+
+<Router {routes} />
